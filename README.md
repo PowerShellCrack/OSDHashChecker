@@ -80,10 +80,10 @@ Hash_DeployWIM=<hash>
 
 ## Screenshots
 
-![UI](UI_Screenshots\InvalidHashcheck_example.PNG)
+![UI](./UI_Screenshots/InvalidHashcheck_example.PNG)
 
-![UI](UI_Screenshots\InvalidHashcheck_example2.PNG)
+![UI](./UI_Screenshots/InvalidHashcheck_example2.PNG)
 
-![UI](UI_Screenshots\InvalidHashcheck_example.PNG)
+![UI](./UI_Screenshots/InvalidHashcheck_example.PNG)
 
-![UI](UI_Screenshots\ValidHashcheck.PNG)
+![UI](./UI_Screenshots/ValidHashcheck.PNG)
