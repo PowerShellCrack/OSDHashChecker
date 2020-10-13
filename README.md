@@ -76,3 +76,14 @@ Hash_DeployWIM=<hash>
 ```powershell
 .\LTIHashCheckUI.ps1 -WorkingPath %DeployDrive% -Title 'Validate Content' -CompareType StoredHash -TaskSequenceID %TaskSequenceID% -ShowStatusUI
 ```
+
+
+## Screenshots
+
+![UI](UI_Screenshots\InvalidHashcheck_example.PNG)
+
+![UI](UI_Screenshots\InvalidHashcheck_example2.PNG)
+
+![UI](UI_Screenshots\InvalidHashcheck_example.PNG)
+
+![UI](UI_Screenshots\ValidHashcheck.PNG)
