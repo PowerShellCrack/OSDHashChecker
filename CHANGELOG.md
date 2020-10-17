@@ -1,5 +1,9 @@
 # Change log for OSDHashChecker.ps1
 
+## 1.3.3 - Oct 16,2020
+
+- Added dynamic Auto complete to TasksequenceID parameter in for LTIStorHashUI.ps1
+
 ## 1.3.2 - Aug 26,2020
 
 - Fixed message output and placed in past tense

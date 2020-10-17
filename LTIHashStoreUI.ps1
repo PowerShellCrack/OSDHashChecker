@@ -94,7 +94,23 @@ Param
     [ValidateSet("StoreHash","ExportHash")]
     [String]$StoreType = "StoreHash",
 
-    [Parameter(Mandatory = $false, Position=2)]
+    [Parameter(Mandatory=$true)]
+        [ArgumentCompleter( {
+            param ( $commandName,
+                    $parameterName,
+                    $wordToComplete,
+                    $commandAst,
+                    $fakeBoundParameters )
+
+            if ($fakeBoundParameters.ContainsKey('WorkingPath'))
+            {
+                Get-childitem -Path $fakeBoundParameters.WorkingPath -filter TS.xml -Recurse | ForEach-Object {
+                Split-Path (Split-Path ($_.fullname) -Parent) -Leaf} | Where-Object {
+                    $_ -like "$wordToComplete*"
+                }
+            }
+
+        } )]
     [String]$TaskSequenceID,
 
     [string[]]$ExcludeFiles = ('CustomSettings.ini','Audit.log','Autorun.inf'),
