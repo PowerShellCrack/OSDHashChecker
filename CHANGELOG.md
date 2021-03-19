@@ -11,7 +11,7 @@
 
 ## 1.3.1 - Aug 25, 2020
 
-- Added Invoke-StatusUpdate script to combine progress into one line. Simplifies the scrpt and easier to manage.
+- Added Invoke-StatusUpdate script to combine progress into one line. Simplifies the script and easier to manage.
 
 ## 1.3.0 - Aug 24, 2020
 
@@ -23,7 +23,7 @@
 ## 1.2.0 - Aug 13, 2020
 
 - Added parameter to excluded files. Defaults to excluding CustomSettings.ini,Audit.log,Autorun.inf file within MDT
-- Changed the hash function of files and folders; instead of just counts, hash a collection grab all files with thier sizes
+- Changed the hash function of files and folders; instead of just counts, hash a collection grab all files with their sizes
 - Split Hash checking and Hash storing into different scripts. Provides more security to ensure store action is not ran
 - Extracted functions and xaml into separate folders. Easier change management and reduce main script complexity
 - Added Esc function in UI, allows windows to be in front (to allow troubleshooting)

@@ -113,7 +113,7 @@ Param
         } )]
     [String]$TaskSequenceID,
 
-    [string[]]$ExcludeFiles = ('CustomSettings.ini','Audit.log','Autorun.inf'),
+    [string[]]$ExcludeFiles = ('CustomSettings.ini','Audit.log','Autorun.inf','media.tag'),
 
     [String]$Title,
 

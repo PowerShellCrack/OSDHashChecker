@@ -5,13 +5,17 @@
 ### Collect hash from each zip file (Before Upload)
 
 ```powershell
-Get-ChildItem "C:\Temp" -Filter "*.zip*" | Get-FileHash | Export-Clixml UploadedZipFileHash.xml
+Set-Location "C:\Users\ritracyi\Downloads\ISOs"
+```
+
+```powershell
+Get-ChildItem ".\" -Filter "*.zip*" | Get-FileHash | Export-Clixml .\UploadedZipFileHash.xml
 ```
 
 ### Collect hash from each zip file (After Download)
 
 ```powershell
-Get-ChildItem "C:\Temp" -Filter "*.zip*" | Get-FileHash | Export-Clixml DownloadedZipFileHash.xml
+Get-ChildItem ".\" -Filter "*.zip*" | Get-FileHash | Export-Clixml .\DownloadedZipFileHash.xml
 ```
 
 ### Compare hashes against upload and download
